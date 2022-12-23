@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.mainPlate tr{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 85vw;
+  overflow-x: auto;
+  margin: 15px 20px;
+  padding: 20px 10px;
+  border: 2px solid #ff8100;
+}
+.block-active {
+  color: green;
+}
+.block-inactive {
+  color: grey;
+}
+
+.descPlate {
+  min-width: 200px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  font-size: 14px;
+}
+.tradeButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin: 10px 20px;
+
+}
+.tradeButtons button {
+  font-size: 14px;
+  font-weight: bolder;
+  background: none;
+  border: 2px solid #fff;
+  padding: 10px 15px;
+  border-radius: 15px;
+  color: white;
+  transition: background 0.3s ease;
+}
+.tradeButtons button {
+
+}
+.chatButton:hover{
+  background: green;
+}
+.updateButton:hover{
+background: #4545ff;
+}
+.endButton:hover{
+  background: red;
+}
+.reportButton:hover{
+  background: #d09600;
+}
